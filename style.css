@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+/* header */
+
+.navbar {
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+
+.navbar .container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar-brand {
+    margin: 5px;
+    padding: 10px;
+    display: inline-block
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    font-size: 25px;
+    color: salmon
+}
+
+.navbar-nav {
+    margin: 5px;
+    display: inline;
+    float: right;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navbar-nav a:hover {
+    color: rgb(168, 122, 211)
+}
+
+.search {
+    display: inline-block;
+}
+
+.search-input {
+    height: 35px;
+    border: 1px solid rgb(85, 26, 139);
+    border-radius: 10px;
+    padding: 15px;
+    outline: 0;
+}
+
+.search-input:hover,
+.search-input:focus {
+    border: 1px solid rgb(168, 122, 211)
+}
+
+.search-btn {
+    background: none;
+    outline: 0;
+    border: 0;
+    color: rgb(85, 26, 139);
+    cursor: pointer
+}
+
+.search-btn:hover {
+    color: rgb(168, 122, 211)
+}
+
+.menu {
+    display: none;
+}
+
+.about-hackathon {
+    display: grid;
+    background-color: white;
+    margin-bottom: 20px;
+    border:1px solid #efefef;
+    border-radius: 10px;
+}
+
+.main {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+    display: grid;
+    background-color: rgb(245, 245, 245);
+    margin-top: 60px;
+    font-size: 18px;
+    grid-template-columns: auto auto auto;
+}
+
+.summary {
+    border-radius: 12px;
+    /* width: 60%; */
+    background-color: transparent;
+    margin: 25px;
+    margin-left: 50px;
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.dev-team {
+    border-radius: 12px;
+    max-width:100%;
+   grid-column: 3;
+    
+    margin: 25px 35px;
+   height: fit-content;
+   background: rgb(250,250,250);
+    
+}
+
+
+.summary span {
+    color: darkgrey;
+    font-size: small
+}
+
+.summary a {
+    text-decoration: none;
+    color: rgb(85, 26, 139);
+    display: inline-block;
+}
+
+.summary a:hover {
+    color: rgb(168, 122, 211)
+}
+
+.content-names li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.summary h1 {
+    font-weight: 700px;
+}
+
+.event-details {
+    padding: 30px
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 15px
+}
+
+p {
+    margin-top: 15px;
+}
+
+hr {
+    color: darkgrey;
+    width: 25%;
+    margin: 25px auto;
+    border: none;
+    border-bottom: 1px solid darkgrey;
+}
+
+.categories span {
+    color: black;
+    font-size: 18px;
+}
+
+.appwrite-card {
+    border: 1px solid #d32859;
+    box-shadow: 3px 3px 0px #d32859;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+    padding: 20px
+}
+
+.appwrite-card img {
+    width: 50px;
+    grid-column: 1
+}
+
+a.follow-aw {
+    color: rgb(168, 122, 211);
+}
+
+.follow-aw-1 {
+    grid-column-start: 2;
+    grid-row: 1;
+    font-size: 22px;
+    font-weight: bold
+}
+
+.follow-aw-2 {
+    grid-column-start: 2;
+    grid-row-start: 2
+}
+
+.follow-aw-btn {
+    width: 80px;
+    height: 30px;
+    color: #d32859;
+    background-color: #fef8fa;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    margin: 15px
+}
+
+.swag {
+    padding-left: 20px;
+    border-left: 5px solid lightgray;
+}
+
+.swag img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.dicussions {
+    
+    padding:50px;
+   
+    border-top:1px solid darkgray;
+    
+}
+
+.discuss-top {
+    margin-bottom: 50px;
+}
+
+.discuss-top h2 {
+    display: inline;
+}
+
+.discuss-top button {
+    align-self: center;
+    background-color: white;
+    outline: none;
+    border: 2px solid lightgray;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right
+}
+
+.discuss-top button:hover {
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+
+.discussion-item,
+textarea {
+    border: 1px solid lightgray;
+    outline: 0;
+    border-radius: 5px;
+    padding: 15px;
+    flex-grow: 2;
+}
+
+.discussion-card {
+    display: flex;
+    align-items: space-between;
+    margin-top: 25px
+}
+
+
+
+span.name,
+span.likes {
+    color: rgb(82, 80, 80);
+    font-weight: 500;
+    font-size: large;
+    padding-right: 10px
+}
+
+span.likes {
+    margin-right: 50px
+}
+
+.reply {
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom:20px
+}
+
+i.reply {
+    padding-right: 15px
+}
+.view-all-discussions >button,.follow >button {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #3d3d3d;
+    font-size: 16px;
+    background: #d7d6d6;
+    padding:10px 20px;
+    text-decoration: none;
+    outline: 0;
+    border:none;
+    width:100%;
+    text-align: center;
+    margin-top:30px
+
+  }
+  
+  .view-all-discussions >button:hover {
+    background: #bdbdbd;
+    text-decoration: none;
+  }
+ 
+.view-all-discussions a{
+    
+    font-size:14px;
+    color:#bdbdbd
+}
+.read-next{
+    background-color:rgb(250,250,250);
+    border-radius: 10px;
+    border:3px solid #efefef;
+    padding:30px 50px;
+    margin-bottom:20px
+}
+.news-card{
+    display: flex;
+    
+    margin-bottom:10px;
+    margin-top: 25px
+}
+.news-card>img{
+    width:7%;
+    height:7%;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+  .news-card-name{
+      font-size:22px;
+      color:rgb(64,64,64);
+
+  }
+  .news-card-name:hover{
+      color:rgb(168, 122, 211)
+  }
+
+.news-card-name span{
+    color:#808080;
+    font-size:14px
+}
+.event-details img {
+    display: inline;
+    border-radius: 8px
+}
+
+.banner img{
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 12px
+}
+.dev-team>.container{
+   
+    border-radius: 15px;
+    border-top:35px solid #080808;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+.follow{
+    padding:0 30px 30px 30px;
+    /* border:1px solid rgb(250,250,250); */
+    background-color: white;
+border-radius: 15px;
+
+}
+.follow img{
+    width:50px;
+    position: relative;
+    top:-18px;
+    /* transform: translateY(-18px); */
+    border-radius: 5px;
+    margin-right:10px
+
+}
+.flex-item{
+    display: flex;
+    padding:5px;
+    
+    
+}
+.follow a{
+    text-decoration: none;
+    font-weight: 700;
+    color:black;
+}
+.follow a:hover{
+    color:rgb(168, 122, 211)
+}
+.follow >button{
+    margin-top:0px;
+    background-color:rgb(59,73,223);
+    color:white
+}
+.follow>button:hover{
+    background-color:#476fbf
+}
+.about-dev-team{
+    background-color:white;
+    border-radius:15px;
+    padding:30px
+
+}
+.about-dev-team>p{
+    padding:15px;
+    border:1px solid rgb(235, 235, 235);
+    border-radius: 3px;
+}
+.about-dev-team a{
+    text-decoration:none
+}
+.about-dev-team span{
+    color:#bdbdbd;
+    font-size:14px;
+    padding-right:15px;
+    cursor:pointer;
+}
+.footer{
+    padding: 25px ;
+    background-color:rgb(229,229,229);
+    padding-bottom: 40px;
+}
+.footer >div{
+    text-align: center;
+    line-height: 2;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+        float: right;
+        margin-top: 5px;
+        padding: 15px;
+        color: rgb(85, 26, 139)
+    }
+    .menu:hover {
+        color: rgb(168, 122, 211)
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .main {
+        display: block;
+    }
+    .summary {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .dev-team {
+        width: 100%;
+        display: block;
+        /* position:relative; */
+        margin:10px 0 0 0
+    }
+}
