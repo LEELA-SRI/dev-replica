@@ -558,11 +558,13 @@ i.reply {
 
   .search {
     margin-left: auto;
+    width:fit-content
   }
 
   .search > form,
   .search > form:hover {
     border: 0;
+    padding:0
   }
 }
 
