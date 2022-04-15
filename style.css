@@ -535,7 +535,7 @@ i.reply {
   .menu {
     display: flex;
     background-color: transparent;
-    margin-top: 5px;
+    margin-top: 4px;
     padding: 5px;
     color: black;
   }
@@ -560,7 +560,9 @@ i.reply {
     margin-left: auto;
     width:fit-content
   }
-
+  button.search-btn{
+    padding:0
+  }
   .search > form,
   .search > form:hover {
     border: 0;
