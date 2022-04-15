@@ -145,6 +145,7 @@ button.create-account-btn:hover {
   display: none;
 }
 
+/* main section */
 .main {
   line-height: 30px;
   display: grid;
