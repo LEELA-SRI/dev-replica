@@ -264,7 +264,7 @@ button.create-account-btn:hover {
   border: 1px solid #d32859;
   box-shadow: 3px 3px 0px #d32859;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 8px;
   display: grid;
   column-gap: 15px;
   grid-template-columns: auto auto;
