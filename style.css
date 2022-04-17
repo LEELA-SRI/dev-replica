@@ -177,7 +177,7 @@ button.create-account-btn:hover {
 
 /* main section */
 .main {
-  line-height: 1.4em;
+  line-height: 1.7em;
   display: grid;
   background-color: rgb(245, 245, 245);
   margin-top: 65px;
@@ -206,7 +206,6 @@ button.create-account-btn:hover {
   border-radius: 12px;
   max-width: 100%;
   grid-column: 3;
-
   margin: 25px 35px;
   height: fit-content;
   background: rgb(250, 250, 250);
@@ -338,7 +337,7 @@ code{
   padding-top: 10px;
 }
 .dicussions {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 
   border-top: 1px solid darkgray;
   /* border-bottom: 1px solid darkgray;
@@ -410,7 +409,10 @@ textarea {
   align-items: space-between;
   margin-top: 25px;
 }
-
+.add-dis-img{
+  width:30px;
+  height:30px
+}
 span.name,
 span.likes {
   color: rgb(82, 80, 80);
@@ -420,7 +422,7 @@ span.likes {
 }
 
 span.likes {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .reply {
