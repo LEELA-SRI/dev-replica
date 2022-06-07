@@ -3,186 +3,48 @@
   box-sizing: border-box;
 }
 
-button,
-a,
-.menu,
-img {
+.main button,
+.main a,
+.main .menu,
+.main img {
   cursor: pointer;
 }
 
-h2 {
+.main h2 {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-p {
+.main p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-hr {
+.main hr {
   color: darkgrey;
   width: 25%;
   margin: 25px auto;
   border: none;
   border-bottom: 1px solid darkgrey;
 }
-body {
+.main{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(245, 245, 245);
-}
-/* header */
-
-.navbar {
-  background-color: white;
-  height:fit-content;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  border-bottom: 1px solid #efefef;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  padding: 10px 35px;
-  box-shadow:0px 0px 5px 0 rgb(137, 135, 135);
+  width: 100vw;
 }
 
-/* .navbar .container {
-} */
 
-/* .navbar-brand {
-   margin: 5px;
-  padding: 10px;
-  display: inline-block; 
-} */
-
-.navbar-brand img {
-  width:auto;
-  height:40px
-  
-}
-
-.nav-buttons {
-  margin-left: auto;
-}
-.hidden {
-  display: none;
-}
-
-/* .navbar-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px;
-  display: inline-block;
-} */
-
-.navbar-nav a:hover {
-  color: rgb(168, 122, 211);
-}
-
-.search > form {
-  border: 1px solid rgb(225, 224, 224);
-  border-radius: 10px;
-  padding: 5px 15px;
-  outline: 0;
-  height:40px
-}
-
-.search-input {
-  border: none;
-  font-size: 1.1rem;
-  outline: 0;
-}
-
-.search > form:hover,
-.search > form:focus {
-  border: 1px solid rgb(82, 80, 80);
-}
-
-.search-btn {
-  background: none;
-  outline: 0;
-  border: 0;
-  color: black;
-  cursor: pointer;
-}
-
-.search-btn:hover {
-  color: rgb(168, 122, 211);
-}
-
-button.log-in-btn,
-button.create-account-btn {
-  color: rgb(110, 110, 110);
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  padding: 10px;
-  margin: 0 10px;
-  border-radius: 5px;
-  height:40px
-}
-.content-names{
-  display: flex;
-}
-.event-details>.content-names>a{
-  font-size:1rem;
-  color:#3d3d3d;
-  padding:5px;
-  
-}
-.event-details>.content-names span{
-  font-size:1rem;
-}
-.event-details>.content-names>a:hover{
-  border-radius: 5px;
-  color:black
-}
-a.appwritehack:hover{
-  background-color: rgba(242,46,101,0.10);
-  border:1px solid #f1a5bb;
-}
-a.appwrite:hover{
-  background-color:rgba(59, 73, 223, 0.10);
-  border:1px solid rgb(59,73,223)
-}
-a.meta:hover{
-  background-color: rgba(0, 0, 0, 0.10) ;
-  border:1px solid rgb(0,0,0)
-}
-button.log-in-btn:hover {
-  background-color: rgb(218, 213, 213);
-  color: #080808;
-  text-decoration: underline;
-}
-
-button.create-account-btn {
-  color: blue;
-  border: 1px solid blue;
-}
-
-button.create-account-btn:hover {
-  background-color: blue;
-  color: white;
-  text-decoration: underline;
-}
-
-.menu {
-  display: none;
-}
 
 /* main section */
 .main {
   line-height: 1.7em;
   display: grid;
   background-color: rgb(245, 245, 245);
-  margin-top: 65px;
+  margin-top: 60px;
   font-size: 18px;
   grid-template-columns: auto auto auto;
+  
 }
 
 .about-hackathon {
@@ -191,6 +53,7 @@ button.create-account-btn:hover {
   margin-bottom: 20px;
   border: 1px solid #efefef;
   border-radius: 10px;
+  
 }
 .summary {
   border-radius: 12px;
@@ -198,6 +61,7 @@ button.create-account-btn:hover {
   background-color: transparent;
   margin: 25px;
   margin-left: 35px;
+  
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -384,7 +248,7 @@ code{
   background-color: lightgray;
 }
 
-textarea {
+.main textarea {
   border: 1px solid lightgray;
   outline: 0;
   border-radius: 5px;
@@ -425,11 +289,7 @@ span.likes {
   margin-right: 15px;
 }
 
-.reply {
-  /* margin-left: 10%; */
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
+
 
 i.reply {
   padding-right: 15px;
@@ -475,7 +335,7 @@ i.reply {
   margin-bottom: 10px;
   margin-top: 25px;
   column-gap: 15px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .news-card-img > img {
@@ -511,7 +371,7 @@ i.reply {
   border-radius: 12px;
 }
 
-.dev-team > .container {
+.dev-team > .contain {
   border-radius: 15px;
   border-top: 35px solid #080808;
   display: flex;
@@ -595,7 +455,61 @@ i.reply {
   text-align: center;
   line-height: 2;
 }
+.forum-item-postedby-img > img {
+width:25px;
+height:25px
+} 
 
+.fa {
+  color: #6b6d6f !important;
+  font-size: 1rem !important;
+}
+.icon-color {
+  color: black !important;
+ 
+}
+
+.upvote:focus {
+  color: #ff00bb;
+}
+.bookmark > i {
+  padding: 4px 2px;
+}
+.post-title {
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+#floatingTextarea {
+  border: none;
+  /* overflow-y: scroll; */
+  outline: none;
+  box-shadow: none;
+  
+  resize: none;
+}
+.com-sec {
+  border: 1px solid #ced4da;
+  border-radius:8px
+}
+.forum-item-postedby-img >img {
+  display: none;
+}
+
+.profile-card {
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.profile-box {
+  width: fit-content;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+}
 @media screen and (max-width: 768px) {
   .navbar-nav {
     display: none;
@@ -606,12 +520,10 @@ i.reply {
 .read-next{
   padding:15px
 }
-  .navbar {
-    padding: 10px;
-    column-gap: 5px;
-  }
+ 
   .event-details{
-    padding:15px
+    padding:15px 20px;
+    
   }
 
   .menu {
@@ -642,7 +554,7 @@ i.reply {
     margin-left: 0;
   }
 
-  .search {
+.main  .search {
     margin-left: auto;
     width:fit-content;
     
@@ -657,6 +569,20 @@ i.reply {
     height:fit-content
   }
 }
+.post-comment{
+  border:1px solid lightgray;
+  border-radius: 5px;
+}
+@media (min-width: 375px) {
+ 
+  .forum-item-postedby-img > img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
 
 @media screen and (max-width: 1023px) {
   .main {
@@ -676,15 +602,21 @@ i.reply {
     margin: 10px 0 0 0;
   }
 }
-
+@media (min-width: 1024px){
+.main{
+  margin-top: 70px;
+}
+}
 @media screen and (min-width: 521px) {
   .news-card-img > img {
     width: 63px;
     height: 63px;
   }
 
-  .dicussions .news-card-img > img {
+  .forum-item-postedby-img  > img {
     width: 50px;
     height: 50px;
   }
+
+  
 }
