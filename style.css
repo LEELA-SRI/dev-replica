@@ -277,23 +277,14 @@ code{
   width:30px;
   height:30px
 }
-span.name,
-span.likes {
-  color: rgb(82, 80, 80);
-  font-weight: 500;
+span.name {
+  color: black;
+  font-weight: 550;
   font-size: 1rem;
   padding-right: 10px;
 }
 
-span.likes {
-  margin-right: 15px;
-}
 
-
-
-i.reply {
-  padding-right: 15px;
-}
 
 .view-all-discussions > button,
 .follow > button {
