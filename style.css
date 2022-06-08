@@ -200,8 +200,8 @@ code{
 .dates>ul{
   padding-top: 10px;
 }
-.dicussions {
-  padding: 50px 0 0 0;
+.discussions {
+  padding: 50px 30px;
 
   border-top: 1px solid darkgray;
   /* border-bottom: 1px solid darkgray;
@@ -209,12 +209,12 @@ code{
   border-bottom-right-radius:5px */
 }
 
-.dicussions span.news-card-img {
+.discussions span.news-card-img {
   margin-top: 15px;
   
 }
 
-.dicussions .news-card {
+.discussions .news-card {
   align-items: flex-start;
 }
 
@@ -234,7 +234,7 @@ code{
   align-self: center;
   background-color: white;
   outline: none;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -501,6 +501,28 @@ height:25px
   background-color: white;
   z-index: 2;
 }
+@media (min-width: 375px) {
+ 
+  .forum-item-postedby-img > img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+@media screen and (min-width: 521px) {
+  .news-card-img > img {
+    width: 63px;
+    height: 63px;
+  }
+
+  .forum-item-postedby-img  > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  
+}
 @media screen and (max-width: 768px) {
   .navbar-nav {
     display: none;
@@ -516,6 +538,8 @@ height:25px
     padding:15px 20px;
     
   }
+  .discussions {
+    padding: 50px 1rem;}
 
   .menu {
     display: flex;
@@ -564,15 +588,6 @@ height:25px
   border:1px solid lightgray;
   border-radius: 5px;
 }
-@media (min-width: 375px) {
- 
-  .forum-item-postedby-img > img {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-  }
-}
 
 
 @media screen and (max-width: 1023px) {
@@ -597,17 +612,4 @@ height:25px
 .main{
   margin-top: 70px;
 }
-}
-@media screen and (min-width: 521px) {
-  .news-card-img > img {
-    width: 63px;
-    height: 63px;
-  }
-
-  .forum-item-postedby-img  > img {
-    width: 50px;
-    height: 50px;
-  }
-
-  
 }
