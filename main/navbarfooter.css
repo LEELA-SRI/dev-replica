@@ -578,7 +578,7 @@ body{
 }
 
 .footer_MainBox {
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #000000;
   display: grid;
   place-items: center;

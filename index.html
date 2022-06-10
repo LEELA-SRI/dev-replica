@@ -13,9 +13,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
   </script>
-    <!-- <link rel="stylesheet"
+    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      /> -->
+      />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
@@ -255,15 +255,15 @@
                                     <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-dashboard-blogger-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" height="30px" />
                                     <li style="line-height: 8px;">View Dashboard</li>
                                 </span>
-                                <span style="display: flex; padding-top: 10px; padding-left:15px; width:max-content; padding-bottom: 15px;" class="profile-hover">
+                                <span style="display: flex; padding-top: 10px; padding-left:15px;  padding-bottom: 15px;" class="profile-hover">
                                     <img src="https://img.icons8.com/ios/50/000000/user.png" height="30px" />
                                     <li style="line-height: 8px;">View Profile</li>
                                 </span>
-                                <span style="display: flex; padding-top: 10px; padding-left:15px; width:max-content; padding-bottom: 15px;" class="profile-hover">
+                                <span style="display: flex; padding-top: 10px; padding-left:15px; padding-bottom: 15px;" class="profile-hover">
                                     <img src="https://img.icons8.com/ios/50/000000/user-not-found.png" height="30px" />
                                     <li style="line-height: 8px;">Edit</li>
                                 </span>
-                                <span style="display: flex; padding-top: 10px; padding-left:15px; width:max-content; padding-bottom: 15px;" class="profile-hover">
+                                <span style="display: flex; padding-top: 10px; padding-left:15px; padding-bottom: 15px;" class="profile-hover">
                                     <img src="https://img.icons8.com/windows/32/000000/exit.png" height="30px" />
                                     <li style="line-height: 8px;">Logout</li>
                                 </span>
@@ -1262,33 +1262,42 @@
                 });
             </script>
     
-    <section class="main">
+    <section class="main container-xl">
         <div class="summary">
             <div class="about-hackathon">
                 <div class="banner">
                     <img src="img1.webp" alt="pic1" />
                 </div>
-                <div class="event-details">
-                    <div class="msg-from">
+                
+                    <div class="msg-from-sec">
+                    <div class="msg-from mb-4">
                         <img href=""
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--Vce2LydN--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png" />
-                        <div>
-                            <strong class="announced-by">JANE DOE</strong>&nbsp; <span style="font-size:1rem"> for</span>
-                            <a href="">THE DEV TEAM</a>
-                            <span style="display: block; line-height: 7px" class="announced-on"> On 12 Apr</span>
+                        <div class="d-flex flex-column ">
+                            <div >
+                                <div>
+                            <strong class="announced-by">JANE DOE</strong>&nbsp;  for
+                            <a href="">THE DEV TEAM</a></div>
+                            
+                            </div>
+                            <div style="line-height:9px">
+                                <span class="announced-on">Posted On 12 Apr &centerdot; </span><span  class="announced-on">Updated On 15 Apr</span>
+                            </div>
                         </div>
                     </div>
-                    <h1>Announcing the Appwrite Hackathon on DEV!</h1>
-                    <p class="content-names">
+                    <h1 class="fw-bold">Announcing the Appwrite Hackathon on DEV!</h1>
+                    <p class="content-names d-flex flex-wrap gap-3">
                         <a class="appwritehack"><span style="color:#f22e65">#</span>appwritehack</a>
                         <a class="appwrite"><span style="color:#3b49df">#</span>appwrite</a>
                         <a class="meta"><span style="color:black">#</span>meta</a>
-                    </p>
-                    <p>
+                    </p></div>
+                    <div class="event-details">
+                    <p >
                         There's a brand new opportunity for you to sharpen your software
                         development skills while educating others, and earning some
                         amazing prizes — right here on DEV...
                     </p>
+
                     <h2>Announcing the Appwrite Hackathon on DEV 🎉</h2>
                     <p>
                         This is our last DEV hackathon for a number of months, so if
@@ -1301,7 +1310,7 @@
                     </p>
                     <hr />
                     <p>
-                        <a href="">APPWRITE </a> is a self-hosted backend-as-a-service
+                        <a href="" class="text-blue">APPWRITE </a> is a self-hosted backend-as-a-service
                         platform
                         that gives developers all the APIs required to build any
                         application. With Appwrite, you can add a number of crucial
@@ -1325,25 +1334,25 @@
                     </p>
                     <ul class="categories">
                         <li>
-                            <h4>Web2 Wizards:</h4>
+                            <strong>Web2 Wizards:</strong>
                         </li>
                         <div>Build an application using any of Appwrite’s services that
                             services today’s internet and its users. Projects under this
                             category should make use of user-generated content on the
                             internet in some way.</div>
                         <li>
-                            <h4>Web3 Wunderkinds:</h4>
+                            <strong>Web3 Wunderkinds:</strong>
                         </li>
                         <div>Fascinated by decentralization? Put on your creative hats and
                             build a blockchain-related application using Appwrite.</div>
                         <li>
-                            <h4>Mobile Moguls:</h4>
+                            <strong>Mobile Moguls:</strong>
                         </li>
                         <div>
                             Build a new application that utilizes Appwrite's Apple SDK,
                             Appwrite’s Flutter SDK or Appwrite's Android SDK.</div>
                         <li>
-                            <h4>Wacky Wildcards:</h4>
+                            <strong>Wacky Wildcards:</strong>
                         </li>
                         <div>Build a wacky app that doesn’t fit into one of the categories
                             above. With this category, we are looking for some truly silly
@@ -1351,26 +1360,31 @@
                             — and utilize any offering that Appwrite offers</div>
                     </ul>
                     <h2>Appwrite Resources</h2>
-                    <ul>
+                    <ul class="aw-resources">
                         <li><a href=""> Appwrite documentation</a></li>
                         <li><a href="">Appwrite on YouTube</a></li>
                         <li>
                             <a href="">WATCH: Getting Started With Appwrite's Apple SDK</a>
                         </li>
                         <li>
-                            <a href="">Team Appwrite on DEV...</a>
+                            <a>Team Appwrite on DEV...</a>
                             <div class="appwrite-card">
                                 <div class="sym">
                                     <img href=""
                                         src="https://res.cloudinary.com/practicaldev/image/fetch/s--W4bSIRV8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--7eMrR0VE--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/2225/eb541cf9-84f4-4101-987c-c219cd4b34fc.png" />
                                     <br>
+                                    <!-- <button class="follow-aw-btn" name="button" type="button">
+                                        Follow
+                                    </button> -->
+                                </div>
+                                <div class="d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <a href="" class="follow-aw fs-4 fw-bold" >Appwrite</a>
                                     <button class="follow-aw-btn" name="button" type="button">
                                         Follow
                                     </button>
                                 </div>
-                                <div>
-                                    <a href="" class="follow-aw" style="margin-bottom: 10px">Appwrite</a>
-                                    <a class="follow-aw">Appwrite is an open-source self-hosted
+                                <a class="follow-aw">Appwrite is an open-source self-hosted
                                         backend server
                                         that abstract and simplify complex and repetitive
                                         development tasks behind a very simple to use REST API</a>
@@ -1515,16 +1529,8 @@
                     <p>Happy coding!</p><br>
 
 
-</div>
-<!-- end event details -->
-
-
-
-
-
-
-
-
+                </div>
+                        <!-- end event details -->
 
                     <div class="discussions">
                       <div class="discuss-top">
@@ -1533,508 +1539,566 @@
                       </div>
 
 
-                      <section id="comment-sec">
+                    <section id="comment-sec">
                         <div class="container-fluid p-0">
-                          <div class="d-flex mt-4 p-0 p-sm-2 mb-3 gap-2">
-                            <div class="forum-item-postedby-img posted-by-img">
-                              <i class="fa fa-user"></i>
+                            <div class="d-flex mt-4 p-0  mb-3 gap-2">
+                                <div class="forum-item-postedby-img posted-by-img">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="post-comment" style="width: 100%">
+                                    <div class="d-flex flex-column comment-box">
+                                        <textarea class="form-control" placeholder="kindly login to comment or like"
+                                            id="floatingTextarea"></textarea>
+                                        <button class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                            style="width: fit-content">
+                                            Reply
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="post-comment" style="width:100% ;">
-                              <div class="d-flex flex-column comment-box">
-                                <textarea class="form-control" placeholder="kindly login to comment or like"
-                                  id="floatingTextarea"></textarea>
-                                <button class="d-inline btn btn-primary m-3 me-2
-                                                                          mb-2 py-1 align-self-end submit-comment"
-                                  style="width:fit-content">Reply</button>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- comment section -->
-                          <!-- comment thread starts -->
-
-
-                          <!-- 2nd comment starts -->
-                          <div class="d-flex  mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
-                            <div class="d-flex">
-                              <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-                                <img class="" src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
-                                  alt="" />
-                              </div>
-
-
-                            </div>
-                            <!-- com-sec starts -->
-                            <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
-                              <div class="posted-by">
-                                <span class="name">Eldad A. Fux&nbsp;
-                                  <span class="posted-on"> Apr 12</span></span>
-                              </div>
-                              <!-- comment row starts -->
-
-
-
-                              <div class="comment">
-                                Another hackathon on the list. It is a web3 thing! I am in. Keep up the
-                                grind folks! At the end of the day, We're all gonna make it!
-
-                              </div>
-                              <!-- comment row ends -->
-                              <!-- reactions row starts -->
-                              <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                                                                        align-items-center">
-                                <div class="d-flex  ">
-                                  <span class="upvote fa fa-arrow-up"> 60</span>
-                                </div>
-                                <div class="reply">
-                                  <span class="fa fa-comment-o  ">
-                                    Reply</span>
-                                </div>
-
-                                <div class="dropdown pe-1 d-md-none">
-                                  <span class="dropdown-toggle fa
-                                                                            fa-caret-down  " type="button"
-                                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                  </span>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <li>
-                                      <div class="dropdown-item bookmark">
-                                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="dropdown-item flag">
-                                        <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="bookmark d-none d-md-block
-                                                                           ">
-                                  <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                                </div>
-                                <div class="flag d-none d-md-block
-                                                                           ">
-                                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                </div>
-                              </div>
-                              <!-- reaction row ends -->
-                              <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
-                                <div class="forum-item-postedby-img
-                                                                          posted-by-img">
-                                  <i class="fa fa-user"></i>
-                                </div>
-                                <div class="post-comment" style="width:100%
-                                                                          ;">
-                                  <div class="d-flex flex-column
-                                                                            comment-box">
-                                    <textarea class="form-control" placeholder="kindly login to comment or like"
-                                      id="floatingTextarea"></textarea>
-                                    <button class="d-inline btn
-                                                                              btn-primary m-3 me-2 mb-2
-                                                                              py-1 align-self-end
-                                                                              submit-comment"
-                                      style="width:fit-content">Reply</button>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- thread in 2nd comment starts -->
-                              <div class="d-flex  mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+                            <!-- comment section -->
+                            <!-- comments start -->
+                    
+                            <!-- 1st comment starts -->
+                            <div class="d-flex mt-4 p-0 mx-auto gap-2 comment-card">
                                 <div class="d-flex">
-                                  <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-                                    <img
-                                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--_3AcHzVx--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794550/14200968-dceb-4ef0-bdbd-4f341655d08d.jpg"
-                                      alt="" />
-                                  </div>
-
-
+                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                        <img class="" src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+                                    </div>
                                 </div>
                                 <!-- com-sec starts -->
-                                <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
-                                  <div class="posted-by">
-                                    <span class="name">Mahmoud&nbsp;
-                                      <span class="posted-on">May&nbsp;12</span></span>
-                                  </div>
-                                  <!-- comment row starts -->
-
-
-
-                                  <div class="comment">
-                                    Very excited to see all the cool stuff everyone are going to
-                                    create!! 🤩 It will just make it awesome!!¡Genial! participare desde
-                                    Perú.
-
-                                  </div>
-                                  <!-- comment row ends -->
-                                  <!-- reactions row starts -->
-                                  <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                                                                        align-items-center">
-                                    <div class="d-flex  ">
-                                      <span class="upvote fa fa-arrow-up"> 60</span>
+                                <div class="">
+                                    <div class="d-flex flex-column com-sec mb-1">
+                                        <div class="posted-by d-flex justify-content-between">
+                                            <span class="name">Eldad A. Fux&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                            <div class="flag">
+                                                <i class="fa-regular fa-flag icon"></i>
+                                            </div>
+                                        </div>
+                                        <!-- comment row starts -->
+                    
+                                        <div class="comment">
+                                            Another hackathon on the list. It is a web3 thing! I am in. Keep up
+                                            the grind folks! At the end of the day, We're all gonna make it!
+                                        </div>
+                                        <!-- comment row ends -->
+                                        <!-- reactions row starts -->
+                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="upvote icon fa-regular fa-heart"></i>
+                                                <div class="likes-amt">60</div>
+                                            </div>
+                                            <div class="reply d-flex align-items-center gap-2">
+                                                <i class="fa-regular icon fa-comment"></i>
+                                                <div>Reply</div>
+                                            </div>
+                    
+                                           
+                                           
+                                            
+                                        </div>
                                     </div>
-                                    <div class="reply">
-                                      <span class="fa fa-comment-o  ">
-                                        Reply</span>
-                                    </div>
-
-                                    <div class="dropdown pe-1 d-md-none">
-                                      <span class="dropdown-toggle fa
-                                                                            fa-caret-down  " type="button"
-                                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                      </span>
-                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                        <li>
-                                          <div class="dropdown-item bookmark">
-                                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                                    <!-- reaction row ends -->
+                                    <!-- comment function to the comment starts-->
+                                    <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                        <div class="forum-item-postedby-img posted-by-img">
+                                          <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="post-comment" style="width: 100%">
+                                          <div class="d-flex flex-column comment-box">
+                                            <textarea
+                                              class="form-control"
+                                              placeholder="kindly login to comment or like"
+                                              id="floatingTextarea"
+                                            ></textarea>
+                                            <button
+                                              class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                              style="width: fit-content"
+                                            >
+                                              Reply
+                                            </button>
                                           </div>
-                                        </li>
-                                        <li>
-                                          <div class="dropdown-item flag">
-                                            <i class="fa fa-flag-o" aria-hidden="true">
-                                              Report</i>
-
-                                          </div>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="bookmark d-none d-md-block
-                                                                           ">
-                                      <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                                    </div>
-                                    <div class="flag d-none d-md-block
-                                                                           ">
-                                      <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                    </div>
-                                  </div>
-                                  <!-- reaction row ends -->
-                                  <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
-                                    <div class="forum-item-postedby-img
-                                                                          posted-by-img">
-                                      <i class="fa fa-user"></i>
-                                    </div>
-                                    <div class="post-comment" style="width:100%
-                                                                          ;">
-                                      <div class="d-flex flex-column
-                                                                            comment-box">
-                                        <textarea class="form-control" placeholder="kindly login to comment or like"
-                                          id="floatingTextarea"></textarea>
-                                        <button class="d-inline btn
-                                                                              btn-primary m-3 me-2 mb-2
-                                                                              py-1 align-self-end
-                                                                              submit-comment"
-                                          style="width:fit-content">Reply</button>
+                                        </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!-- com-sec ends -->
-                              </div>
-                              <!-- comment thread ends -->
+                                      <!-- comment function to the comment ends-->
+                                    <!-- comment thread goes here -->
+                                    <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
+                                        <div class="d-flex">
+                                            <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                                <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--1yaaCeco--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/175464/781d44b7-43d2-488f-84c9-fde52cf3b6ec.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <!-- com-sec starts -->
+                                        <div class="">
+                                            <div class="d-flex flex-column com-sec mb-1">
+                                                <div class="posted-by d-flex justify-content-between">
+                                                    <span class="name">Marc&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                                    <div class="flag">
+                                                        <i class="fa-regular fa-flag icon"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- comment row starts -->
+                            
+                                                <div class="comment">
+                                                    Just a question, if my application involve a mobile app, a web app and a server app, would this be 3 submissions or just one?
+                                                </div>
+                                                <!-- comment row ends -->
+                                                <!-- reactions row starts -->
+                                                <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <i class="upvote icon fa-regular fa-heart"></i>
+                                                        <div class="likes-amt">60</div>
+                                                    </div>
+                                                    <div class="reply d-flex align-items-center gap-2">
+                                                        <i class="icon fa-regular fa-comment"></i>
+                                                        <div>Reply</div>
+                                                    </div>
+                            
+                                                   
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- reaction row ends -->
 
-                              <!-- thread in 2nd comment ends -->
+                                            <!-- comment function to the comment starts-->
+                                            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                                <div class="forum-item-postedby-img posted-by-img">
+                                                  <i class="fa fa-user"></i>
+                                                </div>
+                                                <div class="post-comment" style="width: 100%">
+                                                  <div class="d-flex flex-column comment-box">
+                                                    <textarea
+                                                      class="form-control"
+                                                      placeholder="kindly login to comment or like"
+                                                      id="floatingTextarea"
+                                                    ></textarea>
+                                                    <button
+                                                      class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                                      style="width: fit-content"
+                                                    >
+                                                      Reply
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- comment function to the comment ends-->
+                                            <!-- comment thread goes here -->
+                                            <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
+                                                <div class="d-flex">
+                                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                                        <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZnjA6OjL--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/827951/fe26f154-d505-4327-8748-68fad81e0c8b.jpeg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <!-- com-sec starts -->
+                                                <div class="  ">
+                                                    <div class="d-flex flex-column com-sec mb-1">
+                                                        <div class="posted-by d-flex justify-content-between">
+                                                            <span class="name">Steven&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                                            <div class="flag">
+                                                                <i class="fa-regular fa-flag icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- comment row starts -->
+                                    
+                                                        <div class="comment">
+                                                            Well, I'm installing docker for the first time and i would love to start working with VueJS + appwrite. There are zero results on google for how to install them together. I could only find demo codes on GitHub but not a single guide on the installation of appwrite in vue. Also for deployment, I don't believe it works with netlify or heroku am i correct?
+                                                        </div>
+                                                        <!-- comment row ends -->
+                                                        <!-- reactions row starts -->
+                                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <i class="upvote icon fa-regular fa-heart"></i>
+                                                                <div class="likes-amt">60</div>
+                                                            </div>
+                                                            <div class="reply d-flex align-items-center gap-2">
+                                                                <i class="icon fa-regular fa-comment"></i>
+                                                                <div>Reply</div>
+                                                            </div>
+                                    
+                                                           
+                                                           
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <!-- reaction row ends -->
+                                                    <!-- comment function to the comment starts-->
+                                            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                                <div class="forum-item-postedby-img posted-by-img">
+                                                  <i class="fa fa-user"></i>
+                                                </div>
+                                                <div class="post-comment" style="width: 100%">
+                                                  <div class="d-flex flex-column comment-box">
+                                                    <textarea
+                                                      class="form-control"
+                                                      placeholder="kindly login to comment or like"
+                                                      id="floatingTextarea"
+                                                    ></textarea>
+                                                    <button
+                                                      class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                                      style="width: fit-content"
+                                                    >
+                                                      Reply
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- comment function to the comment ends-->
+                                                    <!-- comment thread goes here -->
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <!-- com-sec ends -->
 
-                          </div>
-                          <!-- comment thread ends -->
+                            <!-- 1st comment ends -->
 
-                          <!-- 2nd comment ends -->
-
-
-
-
-
-                          <!-- 3rd comment starts -->
-                          <div class="d-flex  mt-4 p-0 p-sm-2  p-md-3 mx-auto comment-card">
-                            <div class="d-flex">
-                              <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-                                <img
-                                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--WociiNyG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/668723/d66547f3-ba23-436f-8d85-053f40c71175.png"
-                                  alt="" />
-                              </div>
-
-
-                            </div>
-                            <!-- com-sec starts -->
-                            <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
-                              <div class="posted-by">
-                                <span class="name">Matej Bačo&nbsp;
-                                  <span class="posted-on">May&nbsp;18</span></span>
-                              </div>
-                              <!-- comment row starts -->
-
-
-
-                              <div class="comment">
-                                Trust me, Appwrite is one of the easiest to learn! Fun fact, you dont need
-                                to learn everything at once - you can gradually add features as you learn
-                                about them 😇
-                              </div>
-                              <!-- comment row ends -->
-                              <!-- reactions row starts -->
-                              <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                                                                        align-items-center">
-                                <div class="d-flex  ">
-                                  <span class="upvote fa fa-arrow-up"> 60</span>
-                                </div>
-                                <div class="reply">
-                                  <span class="fa fa-comment-o  ">
-                                    Reply</span>
-                                </div>
-
-                                <div class="dropdown pe-1 d-md-none">
-                                  <span class="dropdown-toggle fa
-                                                                            fa-caret-down  " type="button"
-                                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                  </span>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <li>
-                                      <div class="dropdown-item bookmark">
-                                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="dropdown-item flag">
-                                        <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="bookmark d-none d-md-block
-                                                                           ">
-                                  <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                                </div>
-                                <div class="flag d-none d-md-block
-                                                                           ">
-                                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                </div>
-                              </div>
-                              <!-- reaction row ends -->
-                              <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
-                                <div class="forum-item-postedby-img
-                                                                          posted-by-img">
-                                  <i class="fa fa-user"></i>
-                                </div>
-                                <div class="post-comment" style="width:100%
-                                                                          ;">
-                                  <div class="d-flex flex-column
-                                                                            comment-box">
-                                    <textarea class="form-control" placeholder="kindly login to comment or like"
-                                      id="floatingTextarea"></textarea>
-                                    <button class="d-inline btn
-                                                                              btn-primary m-3 me-2 mb-2
-                                                                              py-1 align-self-end
-                                                                              submit-comment"
-                                      style="width:fit-content">Reply</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- com-sec ends -->
-                          </div>
-                          <!-- comment thread ends -->
-
-
-                          <!-- 3rd comment ends -->
-
-                          <!-- 4th comment starts -->
-                          <div class="d-flex  mt-4 p-0 p-sm-2  p-md-3 mx-auto comment-card">
-                            <div class="d-flex">
-                              <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-                                <img
-                                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--WociiNyG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/668723/d66547f3-ba23-436f-8d85-053f40c71175.png"
-                                  alt="" />
-                              </div>
-
-
-                            </div>
-                            <!-- com-sec starts -->
-                            <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
-                              <div class="posted-by">
-                                <span class="name">Matej Bačo&nbsp;
-                                  <span class="posted-on">May&nbsp;18</span></span>
-                              </div>
-                              <!-- comment row starts -->
-
-
-
-                              <div class="comment">
-                                Trust me, Appwrite is one of the easiest to learn! Fun fact, you dont need
-                                to learn everything at once - you can gradually add features as you learn
-                                about them 😇
-                              </div>
-                              <!-- comment row ends -->
-                              <!-- reactions row starts -->
-                              <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                                              align-items-center">
-                                <div class="d-flex  ">
-                                  <span class="upvote fa fa-arrow-up"> 60</span>
-                                </div>
-                                <div class="reply">
-                                  <span class="fa fa-comment-o  ">
-                                    Reply</span>
-                                </div>
-
-                                <div class="dropdown pe-1 d-md-none">
-                                  <span class="dropdown-toggle fa
-                                                  fa-caret-down  " type="button" id="dropdownMenu2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                  </span>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <li>
-                                      <div class="dropdown-item bookmark">
-                                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="dropdown-item flag">
-                                        <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div class="bookmark d-none d-md-block
-                                                 ">
-                                  <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                                </div>
-                                <div class="flag d-none d-md-block
-                                                 ">
-                                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                </div>
-                              </div>
-                              <!-- reaction row ends -->
-                              <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
-                                <div class="forum-item-postedby-img
-                                                posted-by-img">
-                                  <i class="fa fa-user"></i>
-                                </div>
-                                <div class="post-comment" style="width:100%
-                                                ;">
-                                  <div class="d-flex flex-column
-                                                  comment-box">
-                                    <textarea class="form-control" placeholder="kindly login to comment or like"
-                                      id="floatingTextarea"></textarea>
-                                    <button class="d-inline btn
-                                                    btn-primary m-3 me-2 mb-2
-                                                    py-1 align-self-end
-                                                    submit-comment" style="width:fit-content">Reply</button>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- thread comment starts here -->
-
-                              <div class="d-flex  mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+                            <!-- 2nd comment starts here -->
+                            <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
                                 <div class="d-flex">
-                                  <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-                                    <img
-                                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--_3AcHzVx--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794550/14200968-dceb-4ef0-bdbd-4f341655d08d.jpg"
-                                      alt="" />
-                                  </div>
-
-
+                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                        <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--WociiNyG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/668723/d66547f3-ba23-436f-8d85-053f40c71175.png" alt="" />
+                                    </div>
                                 </div>
                                 <!-- com-sec starts -->
-                                <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
-                                  <div class="posted-by">
-                                    <span class="name">Mahmoud&nbsp;
-                                      <span class="posted-on">May&nbsp;12</span></span>
-                                  </div>
-                                  <!-- comment row starts -->
-
-
-
-                                  <div class="comment">
-                                    Very excited to see all the cool stuff everyone are going to
-                                    create!! 🤩 It will just make it awesome!!¡Genial! participare desde
-                                    Perú.
-
-                                  </div>
-                                  <!-- comment row ends -->
-                                  <!-- reactions row starts -->
-                                  <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                                                                        align-items-center">
-                                    <div class="d-flex  ">
-                                      <span class="upvote fa fa-arrow-up"> 60</span>
+                                <div class=" ">
+                                    <div class="d-flex flex-column com-sec mb-1">
+                                        <div class="posted-by d-flex justify-content-between">
+                                            <span class="name">Jake&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                            <div class="flag">
+                                                <i class="fa-regular fa-flag icon"></i>
+                                            </div>
+                                        </div>
+                                        <!-- comment row starts -->
+                    
+                                        <div class="comment">
+                                            Netlify is static hosting, so it won't work there. We plan to support heroku in future, but not yet. 
+                                        </div>
+                                        <!-- comment row ends -->
+                                        <!-- reactions row starts -->
+                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="icon upvote fa-regular fa-heart"></i>
+                                                <div class="likes-amt">60</div>
+                                            </div>
+                                            <div class="reply d-flex align-items-center gap-2">
+                                                <i class="icon fa-regular fa-comment"></i>
+                                                <div>Reply</div>
+                                            </div>
+                    
+                                           
+                                           
+                                            
+                                        </div>
                                     </div>
-                                    <div class="reply">
-                                      <span class="fa fa-comment-o  ">
-                                        Reply</span>
-                                    </div>
-
-                                    <div class="dropdown pe-1 d-md-none">
-                                      <span class="dropdown-toggle fa
-                                                                            fa-caret-down  " type="button"
-                                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                      </span>
-                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                        <li>
-                                          <div class="dropdown-item bookmark">
-                                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                                    <!-- reaction row ends -->
+                                    <!-- comment function to the comment starts-->
+                                    <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                        <div class="forum-item-postedby-img posted-by-img">
+                                          <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="post-comment" style="width: 100%">
+                                          <div class="d-flex flex-column comment-box">
+                                            <textarea
+                                              class="form-control"
+                                              placeholder="kindly login to comment or like"
+                                              id="floatingTextarea"
+                                            ></textarea>
+                                            <button
+                                              class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                              style="width: fit-content"
+                                            >
+                                              Reply
+                                            </button>
                                           </div>
-                                        </li>
-                                        <li>
-                                          <div class="dropdown-item flag">
-                                            <i class="fa fa-flag-o" aria-hidden="true">
-                                              Report</i>
-
-                                          </div>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="bookmark d-none d-md-block
-                                                                           ">
-                                      <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                                    </div>
-                                    <div class="flag d-none d-md-block
-                                                                           ">
-                                      <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-
-                                    </div>
-                                  </div>
-                                  <!-- reaction row ends -->
-                                  <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
-                                    <div class="forum-item-postedby-img
-                                                                          posted-by-img">
-                                      <i class="fa fa-user"></i>
-                                    </div>
-                                    <div class="post-comment" style="width:100%
-                                                                          ;">
-                                      <div class="d-flex flex-column
-                                                                            comment-box">
-                                        <textarea class="form-control" placeholder="kindly login to comment or like"
-                                          id="floatingTextarea"></textarea>
-                                        <button class="d-inline btn
-                                                                              btn-primary m-3 me-2 mb-2
-                                                                              py-1 align-self-end
-                                                                              submit-comment"
-                                          style="width:fit-content">Reply</button>
+                                        </div>
                                       </div>
+                                      <!-- comment function to the comment ends-->
+                                    <!-- comment thread goes here -->
+                                    
+                                </div>
+                            </div>
+                            <!-- 2nd comment ends -->
+
+
+                            <!-- 3rd comment starts -->
+                            <div class="d-flex mt-4 p-0  mx-auto gap- comment-card">
+                                <div class="d-flex">
+                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                        <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--mv0ZDzaw--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/544741/b5a0124d-90f4-4d11-bf48-119ccdb16344.png" alt="" />
                                     </div>
+                                </div>
+                                <!-- com-sec starts -->
+                                <div class=" ">
+                                    <div class="d-flex flex-column com-sec mb-1">
+                                        <div class="posted-by d-flex justify-content-between">
+                                            <span class="name">Khonshu&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                            <div class="flag">
+                                                <i class="fa-regular fa-flag icon"></i>
+                                            </div>
+                                        </div>
+                                        <!-- comment row starts -->
+                    
+                                        <div class="comment">
+                                            Hmm, as far as I am concerned, live deployment is not necessary. As long as there are some screenshots/showcases, open-sourced project with proper readme to follow, I would say that is fine.
+                                        </div>
+                                        <!-- comment row ends -->
+                                        <!-- reactions row starts -->
+                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="icon upvote fa-regular fa-heart"></i>
+                                                <div class="likes-amt">60</div>
+                                            </div>
+                                            <div class="reply d-flex align-items-center gap-2">
+                                                <i class="icon fa-regular fa-comment"></i>
+                                                <div>Reply</div>
+                                            </div>
+                    
+                                           
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- reaction row ends -->
+                                    <!-- comment function to the comment starts-->
+                                    <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                        <div class="forum-item-postedby-img posted-by-img">
+                                          <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="post-comment" style="width: 100%">
+                                          <div class="d-flex flex-column comment-box">
+                                            <textarea
+                                              class="form-control"
+                                              placeholder="kindly login to comment or like"
+                                              id="floatingTextarea"
+                                            ></textarea>
+                                            <button
+                                              class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                              style="width: fit-content"
+                                            >
+                                              Reply
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- comment function to the comment ends-->
+                                    <!-- comment thread goes here -->
+                                    <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
+                                        <div class="d-flex">
+                                            <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                                <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--uF9lUkHG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/812549/7e69b302-39dd-4af2-97d5-23ccd6063c9a.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <!-- com-sec starts -->
+                                        <div class=" ">
+                                            <div class="d-flex flex-column com-sec mb-1">
+                                                <div class="posted-by d-flex justify-content-between">
+                                                    <span class="name">Mary Magdalene&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                                    <div class="flag">
+                                                        <i class="fa-regular fa-flag icon"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- comment row starts -->
+                            
+                                                <div class="comment">
+                                                    It's rain of Hackathons! 🔥 If I'm lucky enough, I can participate
+                                                    on this one too 🙌
+
+                                                    For Pythonistas that might get disappointed by no python SDK docs on
+                                                    official website, here's a Github repo that contains examples
+
+                                                    Good luck everyone!
+                                                </div>
+                                                <!-- comment row ends -->
+                                                <!-- reactions row starts -->
+                                                <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <i class="upvote icon fa-regular fa-heart"></i>
+                                                        <div class="likes-amt">60</div>
+                                                    </div>
+                                                    <div class="reply d-flex align-items-center gap-2">
+                                                        <i class="icon fa-regular fa-comment"></i>
+                                                        <div>Reply</div>
+                                                    </div>
+                            
+                                                   
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- reaction row ends -->
+                                            <!-- comment function to the comment starts-->
+                                    <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                        <div class="forum-item-postedby-img posted-by-img">
+                                          <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="post-comment" style="width: 100%">
+                                          <div class="d-flex flex-column comment-box">
+                                            <textarea
+                                              class="form-control"
+                                              placeholder="kindly login to comment or like"
+                                              id="floatingTextarea"
+                                            ></textarea>
+                                            <button
+                                              class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                              style="width: fit-content"
+                                            >
+                                              Reply
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- comment function to the comment ends-->
+                                            <!-- comment thread goes here -->
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- 3rd comment ends -->
+
+                            <!-- 4th comment starts -->
+                            <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
+                                <div class="d-flex">
+                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                        <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--BmAHLQVc--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/119691/5be2bcad-e1ee-4ef8-928b-d71f4e355af6.png" alt="" />
+                                    </div>
+                                </div>
+                                <!-- com-sec starts -->
+                                <div class="  ">
+                                    <div class="d-flex flex-column com-sec mb-1">
+                                        <div class="posted-by d-flex justify-content-between">
+                                            <span class="name">Lufthensa&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                            <div class="flag">
+                                                <i class="fa-regular fa-flag icon"></i>
+                                            </div>
+                                        </div>
+                                        <!-- comment row starts -->
+                    
+                                        <div class="comment">
+                                            Yeah, thanks for sharing! But in some APIs like Locale, there're no documentation for Python so this repo too come in handy! 🙌🙌
+                                        </div>
+                                        <!-- comment row ends -->
+                                        <!-- reactions row starts -->
+                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="icon upvote fa-regular fa-heart"></i>
+                                                <div class="likes-amt">60</div>
+                                            </div>
+                                            <div class="reply d-flex align-items-center gap-2">
+                                                <i class="icon fa-regular fa-comment"></i>
+                                                <div>Reply</div>
+                                            </div>
+                    
+                                           
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- reaction row ends -->
+                                    <!-- comment function to the comment starts-->
+                            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                <div class="forum-item-postedby-img posted-by-img">
+                                  <i class="fa fa-user"></i>
+                                </div>
+                                <div class="post-comment" style="width: 100%">
+                                  <div class="d-flex flex-column comment-box">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="kindly login to comment or like"
+                                      id="floatingTextarea"
+                                    ></textarea>
+                                    <button
+                                      class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                      style="width: fit-content"
+                                    >
+                                      Reply
+                                    </button>
                                   </div>
                                 </div>
-                                <!-- com-sec ends -->
                               </div>
-                              <!-- comment thread ends -->
-
-                              <!-- threaded  comment ends -->
+                              <!-- comment function to the comment ends-->
+                                    <!-- comment thread goes here -->
+                                    
+                                </div>
                             </div>
-                            <!-- com-sec ends -->
-                          </div>
-                          <!-- comment thread ends -->
 
+                            <!-- 4th comment ends -->
 
-                          <!-- 4th comment ends -->
+                            <!-- 5th comment starts -->
+                            <div class="d-flex mt-4 p-0  mx-auto gap-2 comment-card">
+                                <div class="d-flex">
+                                    <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+                                        <img class="" src="https://res.cloudinary.com/practicaldev/image/fetch/s--b-ahFOGE--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/785242/7c4f39ff-7e9b-41ba-a9e2-d426c308a64d.jpeg" alt="" />
+                                    </div>
+                                </div>
+                                <!-- com-sec starts -->
+                                <div class=" ">
+                                    <div class="d-flex flex-column com-sec mb-1">
+                                        <div class="posted-by d-flex justify-content-between">
+                                            <span class="name">Ava&nbsp; <span class="posted-on"> Apr 12</span></span>
+                                            <div class="flag">
+                                                <i class="fa-regular fa-flag icon"></i>
+                                            </div>
+                                        </div>
+                                        <!-- comment row starts -->
+                    
+                                        <div class="comment">
+                                            just getting on the site and learning about this today. Looking to get a quick and dirty app in to participate and see the greatness that will surely come of such great minds!
+                                        </div>
+                                        <!-- comment row ends -->
+                                        <!-- reactions row starts -->
+                                        <div class="d-flex  mt-2 ps-0 gap-3 align-items-center">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i class="icon upvote fa-heart fa-regular"></i>
+                                                <div class="likes-amt">60</div>
+                                            </div>
+                                            <div class="reply d-flex align-items-center gap-2">
+                                                <i class="icon fa-regular fa-comment"></i>
+                                                <div>Reply</div>
+                                            </div>
+                    
+                                           
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- reaction row ends -->
+                                    <!-- comment function to the comment starts-->
+                            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+                                <div class="forum-item-postedby-img posted-by-img">
+                                  <i class="fa fa-user"></i>
+                                </div>
+                                <div class="post-comment" style="width: 100%">
+                                  <div class="d-flex flex-column comment-box">
+                                    <textarea
+                                      class="form-control"
+                                      placeholder="kindly login to comment or like"
+                                      id="floatingTextarea"
+                                    ></textarea>
+                                    <button
+                                      class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                                      style="width: fit-content"
+                                    >
+                                      Reply
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- comment function to the comment ends-->
+                                    <!-- comment thread goes here -->
+                                    
+                                </div>
+                            </div>
+                            <!-- 5th comment ends -->
 
 
                         </div>
-                      </section>
+                    </section>
 
                       <div class="view-all-discussions">
                         <button>View full discussion (34 comments)</button>
@@ -2060,25 +2124,35 @@
                         }
 
 
-                        const icon = document.querySelectorAll('.fa')
+                        const icon = document.querySelectorAll('.icon')
                         for (let i = 0; i < icon.length; i++) {
                             icon[i].addEventListener('click', function () {
-                                icon[i].classList.toggle('icon-color')
+                                icon[i].classList.toggle('fa-regular')
+                                icon[i].classList.toggle('fa-solid')
+                                
                             })
                         }
+                        // const iconDark = document.querySelectorAll('.fa-solid')
+                        // console.log(iconDark);
+                        // for (let i = 0; i < iconDark.length; i++) {
+                        //     iconDark[i].addEventListener('click', function () {
+                        //         iconDark[i].classList.add('fa-regular')
+                        //         iconDark[i].classList.remove('fa-solid')
+                        //     })
+                        // }
                     </script>
                 
             </div><!-- end about hackathon -->
             <div class="read-next">
                 <h2>Read next</h2>
-                <br />
+                
                 <div class="news-card">
                     <span class="news-card-img">
                         <img href=""
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--PBTSNcTW--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/38578/2b719be8-68c7-4456-bd5c-42f21c3bd6a8.png" />
                     </span>
                     <div class="news-card-name">
-                        <h5>
+                        <h5 class="mb-0">
 
                             Ableist Language & Maintaining an Inclusive Environment
                         </h5>
@@ -2093,7 +2167,7 @@
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--XK2D8QaW--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/17066/64e291f5-65fd-452a-88d9-a2f0c071f807.jpg" />
                     </span>
                     <div class="news-card-name">
-                        <h5>
+                        <h5 class="mb-0">
                             20+ Lessons I've Learned Writing on DEV for 4 Years</h5>
                         <span>Michael Tharrington - Jul 21 '21
 
@@ -2106,7 +2180,7 @@
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--ISO-Xwro--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/551623/d6834701-4563-4984-8f1d-7c6735acd3b6.jpg" />
                     </span>
                     <div class="news-card-name">
-                        <h5>Appwrite Image Previews Receive Massive New Updates</h5>
+                        <h5 class="mb-0">Appwrite Image Previews Receive Massive New Updates</h5>
                         <span>Jean-Michel Fayard 🇫🇷🇩🇪🇬🇧🇪🇸🇨🇴 - Jun 29 '21
 
                         </span>
@@ -2118,7 +2192,7 @@
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--jEXAfZIn--/c_imagga_scale,f_auto,fl_progressive,h_100,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/228745/62b70520-19aa-48f0-a6bb-2bc1a981bafc.jpg" />
                     </span>
                     <div class="news-card-name">
-                        <h5>Authentication - Exploring Appwrite.io with React Series</h5>
+                        <h5 class="mb-0">Authentication - Exploring Appwrite.io with React Series</h5>
                         <span>Daryl Lukas - Jun 26 '21</span>
                     </div>
                 </div>
@@ -2151,27 +2225,35 @@
                 </div>
                 <div class="about-dev-team">
                     <h4>More from <a href="">The DEV team</a></h4><br>
-                    <p>
+                    <div class="d-flex gap-2">
+                             
+                            <p>
 
-                        Interested in the social impact you can have as a developer? Read this post.<br />
-                        <span href="">#meta</span>
-                        <span href="">#forem</span>
-                        <span href="">#inclusion</span>
-                        <span href="">#socialimpact</span>
-                    </p>
+                                Interested in the social impact you can have as a developer? Read this post.<br />
+                                <span href="">#meta</span>
+                                <span href="">#forem</span>
+                                <span href="">#inclusion</span>
+                                <span href="">#socialimpact</span>
+                            </p>
+                        
+                    </div>
+                    <div class="d-flex gap-2">
+                        <img class="pt-1" src="https://blog.bit.ai/wp-content/uploads/2022/05/mw1920_How_Bit.ai_Makes_a_Freelancer_s_Life_Easy_banner-80x80.jpg">
                     <p>
                         Appwrite x DEV Hackathon Help Thread<br />
                         <span href="">#appwritehack</span>
                         <span href="">#appwrite</span>
                         <span href="">#help</span>
-                    </p>
+                    </p></div>
+                    <div class="d-flex gap-2">
+                        <img class="pt-1" src="https://blog.bit.ai/wp-content/uploads/2022/05/mw1920_How_Bit.ai_Can_Help_Students_Manage_Schoolwork_banner-80x80.jpg">
                     <p>
                         Community Discussion Thread — Appwrite x DEV Hackathon<br />
                         <span href="">#discuss</span>
                         <span href="">#appwritehack</span>
                         <span href="">#appwrite</span>
 
-                    </p>
+                    </p></div>
                 </div>
             </div>
         </div>

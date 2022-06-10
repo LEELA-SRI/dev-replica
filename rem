@@ -1,0 +1,500 @@
+<section id="comment-sec">
+  <div class="container-fluid p-0">
+    <div class="d-flex mt-4 p-0 p-sm-2 mb-3 gap-2">
+      <div class="forum-item-postedby-img posted-by-img">
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="post-comment" style="width: 100%">
+        <div class="d-flex flex-column comment-box">
+          <textarea
+            class="form-control"
+            placeholder="kindly login to comment or like"
+            id="floatingTextarea"
+          ></textarea>
+          <button
+            class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+            style="width: fit-content"
+          >
+            Reply
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- comment section -->
+    <!-- comment thread starts -->
+
+    <!-- 2nd comment starts -->
+    <div class="d-flex mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+      <div class="d-flex">
+        <div
+          class="forum-item-postedby-img posted-by-img hov-elt"
+          title="click-me"
+        >
+          <img
+            class=""
+            src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- com-sec starts -->
+      <div class="  ">
+        <div class="d-flex flex-column com-sec p-1mb-1">
+          <div class="posted-by">
+            <span class="name"
+              >Eldad A. Fux&nbsp; <span class="posted-on"> Apr 12</span></span
+            >
+          </div>
+          <!-- comment row starts -->
+
+          <div class="comment">
+            Another hackathon on the list. It is a web3 thing! I am in. Keep up
+            the grind folks! At the end of the day, We're all gonna make it!
+          </div>
+          <!-- comment row ends -->
+          <!-- reactions row starts -->
+          <div class="d-flex ms-2 mt-2 ps-0 gap-3 align-items-center">
+            <div class="d-flex">
+              <span class="upvote fa fa-arrow-up"> 60</span>
+            </div>
+            <div class="reply">
+              <span class="fa fa-comment-o"> Reply</span>
+            </div>
+
+            <div class="dropdown pe-1 d-md-none">
+              <span
+                class="dropdown-toggle fa fa-caret-down"
+                type="button"
+                id="dropdownMenu2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bookmark d-none d-md-block">
+              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+            </div>
+            <div class="flag d-none d-md-block">
+              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+            </div>
+          </div>
+        </div>
+        <!-- reaction row ends -->
+        <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+          <div class="forum-item-postedby-img posted-by-img">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="post-comment" style="width: 100%">
+            <div class="d-flex flex-column comment-box">
+              <textarea
+                class="form-control"
+                placeholder="kindly login to comment or like"
+                id="floatingTextarea"
+              ></textarea>
+              <button
+                class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                style="width: fit-content"
+              >
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- thread in 2nd comment starts -->
+        <div class="d-flex mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+          <div class="d-flex">
+            <div
+              class="forum-item-postedby-img posted-by-img hov-elt"
+              title="click-me"
+            >
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--_3AcHzVx--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794550/14200968-dceb-4ef0-bdbd-4f341655d08d.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- com-sec starts -->
+          <div class="row d-flex mx-1 p-1 mb-1 com-sec">
+            <div class="posted-by">
+              <span class="name"
+                >Mahmoud&nbsp; <span class="posted-on">May&nbsp;12</span></span
+              >
+            </div>
+            <!-- comment row starts -->
+
+            <div class="comment">
+              Very excited to see all the cool stuff everyone are going to
+              create!! 🤩 It will just make it awesome!!¡Genial! participare
+              desde Perú.
+            </div>
+            <!-- comment row ends -->
+            <!-- reactions row starts -->
+            <div class="d-flex ms-2 mt-2 ps-0 gap-3 align-items-center">
+              <div class="d-flex">
+                <span class="upvote fa fa-arrow-up"> 60</span>
+              </div>
+              <div class="reply">
+                <span class="fa fa-comment-o"> Reply</span>
+              </div>
+
+              <div class="dropdown pe-1 d-md-none">
+                <span
+                  class="dropdown-toggle fa fa-caret-down"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                </span>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <div class="dropdown-item bookmark">
+                      <i class="fa fa-bookmark-o" aria-hidden="true"></i
+                      >Bookmark
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item flag">
+                      <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="bookmark d-none d-md-block">
+                <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+              </div>
+              <div class="flag d-none d-md-block">
+                <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+              </div>
+            </div>
+            <!-- reaction row ends -->
+            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+              <div class="forum-item-postedby-img posted-by-img">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="post-comment" style="width: 100%">
+                <div class="d-flex flex-column comment-box">
+                  <textarea
+                    class="form-control"
+                    placeholder="kindly login to comment or like"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <button
+                    class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                    style="width: fit-content"
+                  >
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- com-sec ends -->
+        </div>
+        <!-- comment thread ends -->
+
+        <!-- thread in 2nd comment ends -->
+      </div>
+      <!-- com-sec ends -->
+    </div>
+    <!-- comment thread ends -->
+
+    <!-- 2nd comment ends -->
+
+    <!-- 3rd comment starts -->
+    <div class="d-flex mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+      <div class="d-flex">
+        <div
+          class="forum-item-postedby-img posted-by-img hov-elt"
+          title="click-me"
+        >
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--WociiNyG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/668723/d66547f3-ba23-436f-8d85-053f40c71175.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- com-sec starts -->
+      <div class="row d-flex mx-1 p-1 mb-1 com-sec">
+        <div class="posted-by">
+          <span class="name"
+            >Matej Bačo&nbsp; <span class="posted-on">May&nbsp;18</span></span
+          >
+        </div>
+        <!-- comment row starts -->
+
+        <div class="comment">
+          Trust me, Appwrite is one of the easiest to learn! Fun fact, you dont
+          need to learn everything at once - you can gradually add features as
+          you learn about them 😇
+        </div>
+        <!-- comment row ends -->
+        <!-- reactions row starts -->
+        <div class="d-flex ms-2 mt-2 ps-0 gap-3 align-items-center">
+          <div class="d-flex">
+            <span class="upvote fa fa-arrow-up"> 60</span>
+          </div>
+          <div class="reply">
+            <span class="fa fa-comment-o"> Reply</span>
+          </div>
+
+          <div class="dropdown pe-1 d-md-none">
+            <span
+              class="dropdown-toggle fa fa-caret-down"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <div class="dropdown-item bookmark">
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-item flag">
+                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bookmark d-none d-md-block">
+            <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+          </div>
+          <div class="flag d-none d-md-block">
+            <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+          </div>
+        </div>
+        <!-- reaction row ends -->
+        <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+          <div class="forum-item-postedby-img posted-by-img">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="post-comment" style="width: 100%">
+            <div class="d-flex flex-column comment-box">
+              <textarea
+                class="form-control"
+                placeholder="kindly login to comment or like"
+                id="floatingTextarea"
+              ></textarea>
+              <button
+                class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                style="width: fit-content"
+              >
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- com-sec ends -->
+    </div>
+    <!-- comment thread ends -->
+
+    <!-- 3rd comment ends -->
+
+    <!-- 4th comment starts -->
+    <div class="d-flex mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+      <div class="d-flex">
+        <div
+          class="forum-item-postedby-img posted-by-img hov-elt"
+          title="click-me"
+        >
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--WociiNyG--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/668723/d66547f3-ba23-436f-8d85-053f40c71175.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- com-sec starts -->
+      <div class="row d-flex mx-1 p-1 mb-1 com-sec">
+        <div class="posted-by">
+          <span class="name"
+            >Matej Bačo&nbsp; <span class="posted-on">May&nbsp;18</span></span
+          >
+        </div>
+        <!-- comment row starts -->
+
+        <div class="comment">
+          Trust me, Appwrite is one of the easiest to learn! Fun fact, you dont
+          need to learn everything at once - you can gradually add features as
+          you learn about them 😇
+        </div>
+        <!-- comment row ends -->
+        <!-- reactions row starts -->
+        <div class="d-flex ms-2 mt-2 ps-0 gap-3 align-items-center">
+          <div class="d-flex">
+            <span class="upvote fa fa-arrow-up"> 60</span>
+          </div>
+          <div class="reply">
+            <span class="fa fa-comment-o"> Reply</span>
+          </div>
+
+          <div class="dropdown pe-1 d-md-none">
+            <span
+              class="dropdown-toggle fa fa-caret-down"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <div class="dropdown-item bookmark">
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-item flag">
+                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bookmark d-none d-md-block">
+            <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+          </div>
+          <div class="flag d-none d-md-block">
+            <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+          </div>
+        </div>
+        <!-- reaction row ends -->
+        <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+          <div class="forum-item-postedby-img posted-by-img">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="post-comment" style="width: 100%">
+            <div class="d-flex flex-column comment-box">
+              <textarea
+                class="form-control"
+                placeholder="kindly login to comment or like"
+                id="floatingTextarea"
+              ></textarea>
+              <button
+                class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                style="width: fit-content"
+              >
+                Reply
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- thread comment starts here -->
+
+        <div class="d-flex mt-4 p-0 p-sm-2 p-md-3 mx-auto comment-card">
+          <div class="d-flex">
+            <div
+              class="forum-item-postedby-img posted-by-img hov-elt"
+              title="click-me"
+            >
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--_3AcHzVx--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/794550/14200968-dceb-4ef0-bdbd-4f341655d08d.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- com-sec starts -->
+          <div class="row d-flex mx-1 p-1 mb-1 com-sec">
+            <div class="posted-by">
+              <span class="name"
+                >Mahmoud&nbsp; <span class="posted-on">May&nbsp;12</span></span
+              >
+            </div>
+            <!-- comment row starts -->
+
+            <div class="comment">
+              Very excited to see all the cool stuff everyone are going to
+              create!! 🤩 It will just make it awesome!!¡Genial! participare
+              desde Perú.
+            </div>
+            <!-- comment row ends -->
+            <!-- reactions row starts -->
+            <div class="d-flex ms-2 mt-2 ps-0 gap-3 align-items-center">
+              <div class="d-flex">
+                <span class="upvote fa fa-arrow-up"> 60</span>
+              </div>
+              <div class="reply">
+                <span class="fa fa-comment-o"> Reply</span>
+              </div>
+
+              <div class="dropdown pe-1 d-md-none">
+                <span
+                  class="dropdown-toggle fa fa-caret-down"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                </span>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <div class="dropdown-item bookmark">
+                      <i class="fa fa-bookmark-o" aria-hidden="true"></i
+                      >Bookmark
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item flag">
+                      <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="bookmark d-none d-md-block">
+                <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+              </div>
+              <div class="flag d-none d-md-block">
+                <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+              </div>
+            </div>
+            <!-- reaction row ends -->
+            <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+              <div class="forum-item-postedby-img posted-by-img">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="post-comment" style="width: 100%">
+                <div class="d-flex flex-column comment-box">
+                  <textarea
+                    class="form-control"
+                    placeholder="kindly login to comment or like"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <button
+                    class="d-inline btn btn-primary m-3 me-2 mb-2 py-1 align-self-end submit-comment"
+                    style="width: fit-content"
+                  >
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- com-sec ends -->
+        </div>
+        <!-- comment thread ends -->
+
+        <!-- threaded  comment ends -->
+      </div>
+      <!-- com-sec ends -->
+    </div>
+    <!-- comment thread ends -->
+
+    <!-- 4th comment ends -->
+  </div>
+</section>
