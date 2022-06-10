@@ -99,10 +99,9 @@ body {
   color: rgb(47, 58, 178);
 }
 
-/* .content-names > a {
-  display: inline;
-  padding: 5px;
-} */
+.content-names > a {
+  font-size: 1rem;
+}
 
 .summary h1 {
   font-weight: 700px;
@@ -142,7 +141,31 @@ body {
   height: 40px;
   border-radius: 8px;
 }
-
+#back-to-top{
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  width:40px;
+  height:40px;
+  background-color:#ebecfc;
+  cursor: pointer; 
+  padding:3px 12px; 
+  border-radius: 5px; 
+  font-size: 20px; 
+}
+#back-to-top:hover{
+  background: #2f3ab2;
+}
+.nav-to-top i{
+  color:black
+}
+.nav-to-top i:hover{
+  color:white
+}
 .categories div {
   padding-bottom: 8px;
 }
@@ -316,12 +339,16 @@ code {
   height: 30px;
 }
 
-span.name {
-  color: black;
+.posted-by {
+  text-transform:capitalize;
   font-weight: 600;
-  font-size: 1.2rem;
-  padding-right: 10px;
+  
+  
 }
+/* .posted-on{
+  color:#3d3d3d;
+  text-transform: capitalize;
+} */
 
 .view-all-discussions > button,
 .follow > button {
@@ -372,7 +399,7 @@ span.name {
 
 .banner img {
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
   /* border-radius: 12px; */
 }
 
@@ -491,12 +518,27 @@ span.name {
 
   resize: none;
 }
+.block{
+  display: none;
+}
+.comment-thread{
+  padding-left:0.9rem
+}
+.comment-card-text{
+  width:100%;
+}
 
-.com-sec {
+.comment-card .dropdown-item:hover{
+  color:#2f3ab2;
+  background:#ebecfc
+}
+.comment-body {
   border: 1px solid #d0d0d0;
   border-radius: 8px;
   padding: 0.875rem;
   padding-top: 0.3rem;
+  font-size:1rem;
+  line-height: 1.5;
 }
 
 .forum-item-postedby-img > img {
@@ -516,12 +558,17 @@ span.name {
   background-color: white;
   z-index: 2;
 }
-
+.comment-thread .forum-item-postedby-img > img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
 @media (min-width: 375px) {
   .forum-item-postedby-img > img {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 100%;
   }
 }
@@ -532,10 +579,7 @@ span.name {
     height: 63px;
   }
 
-  .forum-item-postedby-img > img {
-    width: 50px;
-    height: 50px;
-  }
+  
 }
 .main {
   font-size: 1.12rem;
@@ -681,7 +725,11 @@ span.name {
 }
 
 /* 2560px ends */
-
+@media (min-width: 1540px){
+  .container-fluid{
+    max-width: 1200px;
+  }
+}
 
 @media (max-width:1024px){
   .event-details {
@@ -770,4 +818,3 @@ span.name {
     top:75px
   }
 }
-
