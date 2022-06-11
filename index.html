@@ -1273,7 +1273,7 @@
                     <div class="msg-from mb-4">
                         <img href=""
                             src="https://res.cloudinary.com/practicaldev/image/fetch/s--Vce2LydN--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png" />
-                        <div class="d-flex flex-column ">
+                        <div class="d-flex flex-column " style="line-height:1.2">
                             <div>
                                 <div>
                                     <strong class="announced-by">JANE DOE</strong>&nbsp; for
@@ -1281,10 +1281,17 @@
                                 </div>
     
                             </div>
-                            <div style="line-height:9px">
+                            <div>
                                 <span class="announced-on">Posted On 12 Apr &centerdot; </span><span
                                     class="announced-on">Updated On 15 Apr</span>
                             </div>
+                        </div>
+                        <div class="d-flex gap-2 gap-sm-3 mt-2 ms-auto ">
+                            <i class="fa-regular fa-thumbs-up icon" title="like"></i>
+                            <i class="fa-regular fa-bookmark icon"title="bookmark"></i>
+                            <i class="fa-regular fa-pen-to-square icon" title="improve article"></i>
+                            <i class="fa-regular fa-comment icon " title="view discussion"></i>
+
                         </div>
                     </div>
                     <h1 class="fw-bold">Announcing the Appwrite Hackathon on DEV!</h1>
@@ -1530,15 +1537,48 @@
                         the amazing applications you come up with.
                     </p>
                     <p>Happy coding!</p><br>
-    
-    
+    <!-- <div class="d-flex justify-content-between my-3">
+        <i class="fa-regular fa-thumbs-up icon" title="like"></i>
+                            <i class="fa-regular fa-bookmark icon"title="bookmark"></i>
+                            <i class="fa-regular fa-pen-to-square icon" title="improve article"></i>
+                            <i class="fa-regular fa-comment icon " title="view discussion"></i>
+
+    </div>     -->
                 </div>
                 <!-- end event details -->
     
                 <div class="discussions">
                     <div class="discuss-top">
-                        <h2>Discussion(34)</h2>
+                        <!-- <div class="d-flex justify-content-between">
+                        
                         <button>Subscribe</button>
+                        </div> -->
+                        <div class="d-flex mt-3 align-items-center gap-3">
+                            <h6>Comments(<span class="num_comments text-black fs-6">60</span>)</h6>
+                            <div class="dropdown  ms-auto">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Sort By
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Hottest</a></li>
+                                  <li><a class="dropdown-item" href="#">New to Old</a></li>
+                                  <li><a class="dropdown-item" href="#">Old to New</a></li>
+                                </ul>
+                              </div>
+
+                        
+                        <div class="btn-group">
+                            <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" type="button"
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            </i>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item sub-to-article" href="#">Subscribe</a></li>
+                                <li><a class="dropdown-item sub-to-article d-none" href="#">Subscribed</a></li> 
+                                <li><a class="dropdown-item bookmark-article" href="#">Bookmark</a></li>
+                                <li><a class="dropdown-item bookmarked-article d-none" href="#">Bookmarked</a></li>
+                                <li><a class="dropdown-item" href="#">Improve Article</a></li>
+                            </ul>
+                        </div></div>
                     </div>
                     <section>
                         <div class="d-flex mt-4 p-0  mb-3 gap-2">
@@ -2623,6 +2663,12 @@
                 <span>Daryl Lukas - Jun 26 '21</span>
             </div>
         </div>
+        <!-- <div class="bottom">
+            <div class="d-flex gap-2 justify-content-center">
+            <button type="button" class="btn improve"><a href="" class="text-decoration-none ">Improve Article</a></button>
+            <button type="button" class="btn view-discussions"><a href="" class="text-decoration-none">view Discussions</a></button>
+            </div>
+        </div> -->
     </div>
     <!-- end read-next -->
     <!-- </div> -->
@@ -2634,18 +2680,26 @@
                 <div class="flex-item">
                     <img
                         src="https://res.cloudinary.com/practicaldev/image/fetch/s--mbsgKaXh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png" />
-                    <a href="">The DEV team</a>
+                    <a href="" class="posted-by">The DEV team</a>
                 </div>
                 <button>Follow</button>
     
-                <p style="margin-top:20px">The hardworking team behind dev.to ❤️</p>
-                <p>
+                <p style="margin-top:20px" >The hardworking team behind dev.to ❤️</p>
+                <p class="about-author">
                     Want to contribute to open source and help make the DEV community
                     stronger?<br />
                     The code that powers DEV is called <b>Forem</b> and is freely
                     available on GitHub.<br />
                     You're welcome to jump in!
                 </p>
+                <!-- <div class="info-title">LOCATION</div>
+                <div class="location info">Washington DC</div>
+                <div class="info-title">EDUCATION</div>
+                <div class="education info">Duke University | The Firehose Project (coding bootcamp)</div>
+<div class="info-title">WORK</div>
+<div class="work info">Software Engineer at Forem</div>
+<div class="info-title">JOINED</div>
+<div class="join-date info">10 Jul 2018</div> -->
                 <div class="view-all-discussions">
                     <button>Contribute to Forem</button>
                 </div>
@@ -2711,6 +2765,12 @@
         }
     </script>
     </section>
+    <!-- <section class="container bottom">
+        <div class="d-flex gap-2 justify-content-center">
+        <button type="button" class="btn improve"><a href="" class="text-decoration-none ">Improve Article</a></button>
+        <button type="button" class="btn view-discussions"><a href="" class="text-decoration-none">view Discussions</a></button>
+        </div>
+    </section> -->
     
     <!--  section ends -->
 

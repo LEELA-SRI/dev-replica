@@ -112,8 +112,10 @@ body {
 }
 .news-card {
   display: flex;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   column-gap: 15px;
+  padding:13px 0;
+  border-bottom: 1px solid #e4e2e2;
   align-items: flex-start;
 }
 
@@ -123,8 +125,18 @@ body {
   width:50px;
   height:50px
 }
-
-
+.follow p,.follow div{
+  font-size:1rem;
+  color:#3e3d3d;
+  line-height: 1.5;
+}
+.info-title{
+  font-weight:700;
+  
+}
+.info{
+  padding-bottom:0.75rem
+}
 .msg-from {
   display: flex;
   column-gap: 10px;
@@ -276,8 +288,8 @@ code {
 
 .discuss-top {
   margin-bottom: 50px;
-  display: flex;
-  align-items: space-between;
+  
+  
 }
 
 .discuss-top h2 {
@@ -299,10 +311,11 @@ code {
   margin-left: auto;
 }
 
-.discuss-top button:hover {
+/* .discuss-top button:hover {
   border: 1px solid gray;
   background-color: lightgray;
-}
+} */
+
 
 .forum-item-postedby-img > img {
   margin-top: 0.5rem;
@@ -381,6 +394,7 @@ code {
   font-size: 1.5rem;
   color: rgb(64, 64, 64);
   cursor: pointer;
+  width:100%
 }
 
 .news-card-name:hover {
@@ -471,27 +485,26 @@ code {
 .about-dev-team span {
   color: #bdbdbd;
   font-size: 0.9rem;
-  padding-right: 15px;
+  padding-right: 5px;
   cursor: pointer;
 }
-
-.footer {
-  padding: 25px;
-
-  background-color: rgb(229, 229, 229);
-  padding-bottom: 40px;
-  /* width: 100%; */
+.bottom{
+  margin-top:1rem;
+  margin-bottom: 1.5rem;
 }
-
-.footer > div {
-  text-align: center;
-  line-height: 2;
+.improve,.view-discussions{
+background: #b7b5b5;
+}
+.improve a,.view-discussions a{
+  color:black
 }
 
 .icon {
   cursor: pointer;
 }
-
+.about-dev-team div{
+  font-size: 1rem;
+}
 .upvote:focus {
   color: #ff00bb;
 }
@@ -581,9 +594,12 @@ code {
 
   
 }
-.main {
-  font-size: 1.12rem;
+@media (min-width:576px){
+  .fa-regular,.fa-solid{
+    font-size: large;
+  }
 }
+
 .follow {
   padding: 0rem 1rem 1rem 1rem;
 }
@@ -591,6 +607,7 @@ code {
 .about-dev-team {
   padding: 1rem;
   line-height: 1.2;
+  border-top:35px solid #080808
 }
 .about-dev-team div {
   padding: 1rem;
@@ -723,6 +740,7 @@ code {
   
   
 }
+
 
 /* 2560px ends */
 @media (min-width: 1540px){
