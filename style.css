@@ -504,11 +504,11 @@ background: #b7b5b5;
 .view-discussions a{
   color:black
 }
-.improve,.report-article,.save-article {
+.improve,.report-article,.save-article,.like-article {
   border:1px solid #717171;
   margin-right: 1rem;
 }
-.improve:hover,.report-article:hover,.save-article:hover{
+.improve:hover,.report-article:hover,.save-article:hover,.like-article:hover{
   background:black;
   color:white
 }
