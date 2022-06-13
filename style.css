@@ -506,7 +506,7 @@ background: #b7b5b5;
 }
 .improve,.report-article,.save-article,.like-article {
   border:1px solid #717171;
-  margin-right: 1rem;
+  
 }
 .improve:hover,.report-article:hover,.save-article:hover,.like-article:hover{
   background:black;
