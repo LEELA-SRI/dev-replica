@@ -548,6 +548,11 @@ background: #b7b5b5;
 .block{
   display: none;
 }
+.black-top{
+  top:-32px;
+  position: relative;
+  color:white
+}
 .comment-thread{
   padding-left:0.9rem
 }
