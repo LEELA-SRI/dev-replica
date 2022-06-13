@@ -1537,13 +1537,11 @@
                         the amazing applications you come up with.
                     </p>
                     <p>Happy coding!</p><br>
-    <!-- <div class="d-flex justify-content-between my-3">
-        <i class="fa-regular fa-thumbs-up icon" title="like"></i>
-                            <i class="fa-regular fa-bookmark icon"title="bookmark"></i>
-                            <i class="fa-regular fa-pen-to-square icon" title="improve article"></i>
-                            <i class="fa-regular fa-comment icon " title="view discussion"></i>
-
-    </div>     -->
+    <div class="d-flex justify-content-center my-3">
+   <button class="btn improve">Improve Article</button>
+   <button class="btn report-article">Report Issue</button>
+   <button class="btn save-article">Save Article</button>
+   </div>
                 </div>
                 <!-- end event details -->
     
@@ -1557,28 +1555,19 @@
                             <h6>Comments(<span class="num_comments text-black fs-6">60</span>)</h6>
                             <div class="dropdown  ms-auto">
                                 <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Sort By
+                                  <img src="f.png" class="me-2">filters
                                 </button>
-                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <ul class="dropdown-menu filter" aria-labelledby="dropdownMenuButton1">
                                   <li><a class="dropdown-item" href="#">Hottest</a></li>
                                   <li><a class="dropdown-item" href="#">New to Old</a></li>
                                   <li><a class="dropdown-item" href="#">Old to New</a></li>
                                 </ul>
                               </div>
 
+                              <button class="ms-0 btn">Subscribe</button>
                         
-                        <div class="btn-group">
-                            <i class="fa-solid fa-ellipsis-vertical dropdown-toggle" type="button"
-                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            </i>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item sub-to-article" href="#">Subscribe</a></li>
-                                <li><a class="dropdown-item sub-to-article d-none" href="#">Subscribed</a></li> 
-                                <li><a class="dropdown-item bookmark-article" href="#">Bookmark</a></li>
-                                <li><a class="dropdown-item bookmarked-article d-none" href="#">Bookmarked</a></li>
-                                <li><a class="dropdown-item" href="#">Improve Article</a></li>
-                            </ul>
-                        </div></div>
+                              
+                    </div>
                     </div>
                     <section>
                         <div class="d-flex mt-4 p-0  mb-3 gap-2">
@@ -2682,9 +2671,20 @@
                         src="https://res.cloudinary.com/practicaldev/image/fetch/s--mbsgKaXh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png" />
                     <a href="" class="posted-by">The DEV team</a>
                 </div>
-                <button>Follow</button>
+                <button class="mb-4">Follow</button>
     
-                <p style="margin-top:20px" >The hardworking team behind dev.to ❤️</p>
+               
+                <div class="info-title">LOCATION</div>
+                <div class="location info">Washington DC</div>
+                <div class="info-title">EDUCATION</div>
+                <div class="education info">Duke University | The Firehose Project (coding bootcamp)</div>
+<div class="info-title">WORK</div>
+<div class="work info">Software Engineer at Forem</div>
+<div class="info-title">JOINED</div>
+<div class="join-date info">10 Jul 2018</div>
+</div>
+<div class="follow follow-sub">
+<p style="margin-top:20px" >The hardworking team behind dev.to ❤️</p>
                 <p class="about-author">
                     Want to contribute to open source and help make the DEV community
                     stronger?<br />
@@ -2692,21 +2692,13 @@
                     available on GitHub.<br />
                     You're welcome to jump in!
                 </p>
-                <!-- <div class="info-title">LOCATION</div>
-                <div class="location info">Washington DC</div>
-                <div class="info-title">EDUCATION</div>
-                <div class="education info">Duke University | The Firehose Project (coding bootcamp)</div>
-<div class="info-title">WORK</div>
-<div class="work info">Software Engineer at Forem</div>
-<div class="info-title">JOINED</div>
-<div class="join-date info">10 Jul 2018</div> -->
-                <div class="view-all-discussions">
-                    <button>Contribute to Forem</button>
-                </div>
-            </div>
+<div class="view-all-discussions">
+    <button>Contribute to Forem</button>
+</div></div>
+
             <div class="about-dev-team">
                 <h4>More from <a href="">The DEV team</a></h4><br>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-2 dev-team-card">
                     <img class="pt-1"
                         src="https://blog.bit.ai/wp-content/uploads/2022/06/mw1920_24_Awesome_Integrations_to_Create_Powerful_Documents_banner-80x80.jpg">
                     <p>
@@ -2719,7 +2711,7 @@
                     </p>
     
                 </div>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-2 dev-team-card">
                     <img class="pt-1"
                         src="https://blog.bit.ai/wp-content/uploads/2022/05/mw1920_How_Bit.ai_Makes_a_Freelancer_s_Life_Easy_banner-80x80.jpg">
                     <p>
@@ -2729,7 +2721,7 @@
                         <span href="">#help</span>
                     </p>
                 </div>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-2 dev-team-card">
                     <img class="pt-1"
                         src="https://blog.bit.ai/wp-content/uploads/2022/05/mw1920_How_Bit.ai_Can_Help_Students_Manage_Schoolwork_banner-80x80.jpg">
                     <p>
