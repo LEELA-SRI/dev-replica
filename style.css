@@ -55,6 +55,7 @@ body {
   margin-bottom: 20px;
   border: 1px solid #efefef;
   border-radius: 10px;
+  width:100%
 }
 
 .summary {
@@ -411,7 +412,16 @@ code {
   color: #808080;
   font-size: 0.9rem;
 }
-
+p img{
+  width:100% !important;
+  height:auto
+}
+@media (max-width:991px){
+  .event-details{
+      width:100vw
+  }
+   
+}
 .event-details img {
   display: inline;
   border-radius: 8px;
