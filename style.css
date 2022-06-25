@@ -42,15 +42,15 @@ body {
 /* main section */
 .main {
   line-height: 1.7em;
-  display: grid;
+  display: flex;
   background-color: rgb(245, 245, 245);
   margin-top: 60px;
   font-size: 18px;
-  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto; */
 }
 
 .about-hackathon {
-  display: grid;
+  
   background-color: white;
   margin-bottom: 20px;
   border: 1px solid #efefef;
@@ -60,19 +60,18 @@ body {
 
 .summary {
   border-radius: 12px;
-  /* width: 60%; */
+  width: 70%;
   background-color: transparent;
   margin: 15px;
   margin-left: 0;
 
-  grid-column-start: 1;
-  grid-column-end: 4;
+ 
 }
 
 .dev-team {
   border-radius: 12px;
   max-width: 100%;
-  grid-column: 4;
+  width:30%;
   margin: 15px 0;
 
   height: fit-content;
@@ -84,7 +83,7 @@ body {
   border-radius: 9px;
 }
 .summary span {
-  color: darkgrey;
+  /* color: darkgrey; */
   font-size: 0.8rem;
 }
 
@@ -601,7 +600,7 @@ background: #b7b5b5;
   background-color: white;
   z-index: 2;
 }
-.comment-thread .forum-item-postedby-img > img {
+.comment-thread .forum-item-postedby-img > img,.user-comment-img {
   display: block;
   width: 24px;
   height: 24px;
@@ -655,25 +654,30 @@ background: #b7b5b5;
 .about-dev-team p {
   margin-bottom: 0;
 }
+p img{
+  width:95% !important
+}
 
 @media screen and (max-width: 991px) {
   .main {
-    grid-template-rows: auto auto;
+    display: block;
+    /* grid-template-rows: auto auto; */
     padding:0
   }
 .banner img{
   border-radius: 0;
 }
   .summary {
-    grid-column: 1;
-    grid-row-start: 1;
+    /* grid-column: 1;
+    grid-row-start: 1; */
     width: 100%;
     margin: 0;
   }
 
   .dev-team {
-    grid-column: 1;
-    grid-row-start: 2;
+    /* grid-column: 1;
+    grid-row-start: 2; */
+    width: 100%;
     margin: 10px 0 ;
   }
   
@@ -781,7 +785,7 @@ background: #b7b5b5;
 /* 2560px ends */
 @media (min-width: 1540px){
   .container-fluid{
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
